@@ -25,5 +25,5 @@ mybatis:
   check-config-location: true
   config-location: classpath:mybatis/mybatis-config.xml
   
-#logging:
-#  config: classpath:logback-spring.xml
+logging:
+  config: classpath:logback-spring.xml

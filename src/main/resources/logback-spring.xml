@@ -4,13 +4,13 @@
 
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/home/service/ircenter4memect/logs/</file>
+		<file>/home/service/irsshop-inventory/logs/</file>
 		<!-- Support multiple-JVM writing to the same log file -->
 		<prudent>true</prudent>
 
 		<!-- 每天生成一个日志文件，保存90天的日志文件 -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>ircenter4memect-%d{yyyy-MM-dd}.log</fileNamePattern>
+			<fileNamePattern>irsshop-inventory-%d{yyyy-MM-dd}.log</fileNamePattern>
 			<maxHistory>90</maxHistory>
 		</rollingPolicy>
 
@@ -47,7 +47,7 @@
 
 
 	<logger name="net.sf.json" level="ERROR" />
-	<logger name="org.springframework" level="debug" />
+	<logger name="org.springframework" level="info" />
 	<logger name="com.alibaba.druid" level="ERROR" />
 	<logger name="org.apache.ibatis.session" level="debug" />
 	<logger name="org.mybatis" level="debug" />
